@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(64, 64, 64);
+    color: rgb(238, 238, 238);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+.bombas{
+    display: grid;
+    row-gap: 50px;
+    column-gap: 100px;
+    grid-template-columns: repeat(3, 100px);
+    justify-content: center;
+    margin: 40px;
+
+}
+
+.bomba {
+    width: 150px;
+    height: 150px;
+    background-image: url("fotos/bomba.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.bomba:hover {
+    background-image: url("fotos/explosion.jpeg");
+    transform: scale(1.1);
+    box-shadow: 0 2px 10px rgb(27, 27, 27);
+}
+
+.bomba.apagada:hover {
+    background-image: url("fotos/extintor.jpeg");
+    transform: scale(1.1);
+    box-shadow: 0 2px 10px rgb(27, 27, 27);
+}
